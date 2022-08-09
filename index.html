@@ -1,19 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,700,600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+  <main>
+    <div class="whole-page">
+      <div class="sidebar">
+        <h1 class="heading schoolstats">Schoolstats</h1>
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-desktop"></i></span>
+              <span class="item">My Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fas fa-user-friends"></i></span>
+              <span class="item">Instructors</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="active">
+              <span class="icon"><i class="fas fa-home"></i></span>
+              <span class="item">Students</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-contents">
+        <h1 class="heading">Instructors</h1>
+        <div class="small-stats-container">
+          <div class="stat-item">
+            <div class="left-pane">
+              <p class="stat-head">Total students</p>
+              <h1 class="stat-num">600</h1>
+            </div>
+            <div class="right-pane">
+              <div class="icon"><i class="fa-regular fa-ellipsis-vertical"></i></div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="left-pane">
+              <p class="stat-head">Male</p>
+              <h1 class="stat-num">412</h1>
+            </div>
+            <div class="right-pane">
+              <div class="icon"><i class="fa-regular fa-ellipsis-vertical"></i></div>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="left-pane">
+              <p class="stat-head">Female</p>
+              <h1 class="stat-num">188</h1>
+            </div>
+            <div class="right-pane">
+              <div class="icon"><i class="fa-regular fa-ellipsis-vertical"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filters">
+          <div class="left-filters">
+            <a href="#">Male</a>
+            <a href="#">Female</a>
+          </div>
+          <div class="right-filters">
+            <div class="search-div">
+              <input id="search" type="text" placeholder="Search">
+            </div>
+          </div>
+        </div>
+
+        <div class="table-setup">
+          <div class="onlinestatustable">
+            <table class="table">
+              <thead>
+                <th>S/N</th>
+                <th>Name</th>
+                <th>Track</th>
+                <th>Status</th>
+                <th>Courses</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="S/N">0</td>
+                  <td data-label="Name">Erwin Smith</td>
+                  <td data-label="Track"><span class="item">Backend Engineering</span></td>
+                  <td class="instructor" data-label="Status"><p>Instructor</p></td>
+                  <td data-label="Courses">3</td>
+                </tr>
+
+                <tr>
+                  <td data-label="S/N">1</td>
+                  <td data-label="Name">Tanjiro Kamado</td>
+                  <td data-label="Track"><span class="item">Cloud Engineering</span></td>
+                  <td class="instructor" data-label="Status"><p>Instructor</p></td>
+                  <td data-label="Courses">6</td>
+                </tr>
+                <tr>
+                  <td data-label="S/N">2</td>
+                  <td data-label="Name">Kageyama</td>
+                  <td data-label="Track"><span class="item">FrontEnd Engineering</span></td>
+                  <td class="instructor" data-label="Status"><p>Instructor</p></td>
+                  <td data-label="Courses">1</td>
+                </tr>
+                <tr>
+                  <td data-label="S/N">3</td>
+                  <td data-label="Name">Lord Tengen</td>
+                  <td data-label="Track"><span class="item">Backend Engineering</span></td>
+                  <td class="instructor" data-label="Status"><p>Instructor</p></td>
+                  <td data-label="Courses">3</td>
+                </tr>
+                <tr>
+                  <td data-label="S/N">4</td>
+                  <td data-label="Name">Uchiha Sasuke</td>
+                  <td data-label="Track"><span class="item">Backend Engineering</span></td>
+                  <td class="instructor" data-label="Status"><p>Instructor</p></td>
+                  <td data-label="Courses">3</td>
+                </tr>
+                <tr class="last">
+                  <td data-label="S/N">5</td>
+                  <td data-label="Name">Hatake Kakashi</td>
+                  <td data-label="Track"><span class="item">Backend Engineering</span></td>
+                  <td class="instructor" data-label="Status"><p>Instructor</p></td>
+                  <td data-label="Courses">3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
 </body>
+
+</html>
+<!-- <h2>make some magic in here!!</h2> -->
+
+<!-- // ============= EEND DO NOT EDIT ============== // -->
+<script src="index.mjs" type="module"></script>
+<!-- // ============= EEND DO NOT EDIT ============== // -->
+</body>
+
 </html>
